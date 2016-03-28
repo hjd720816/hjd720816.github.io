@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.list li{
+		height: 30px;
+		width: 50px;
+		background-color: green;
+		float:left; 
+		list-style: none;
+		text-align: center;
+		line-height: 30px;
+		border:1px solid blue;
+		overflow: hidden;
+	}
+	.top{
+		height: 60px;
+		width: 50px;
+	}
+	.second{
+		height: 60px;
+		width: 50px;
+	}
+    .third{
+    	height: 60px;
+		width: 50px;
+    }
+    .top a{
+    	height: 30px;
+    	width: 50px;
+    }
+    .top span{
+    	height: 30px;
+    	width: 50px;
+    	background-color: yellow;
+    }
+
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li>
+			<div class="top">
+				<a href="">努力</a>
+				<span>努力</span>
+			</div>
+		</li>
+		<li>
+			<div class="top">
+				<a href="">自由</a>
+				<span>自由</span>
+			</div>
+		</li>
+		<li>
+		<div class="top">
+			<a href="">现实</a>
+			<span>现实</span>
+		</div>	
+		</li>
+	</ul>
+	<script src="js/jquery1.js"></script>
+	<script>
+     $(".list li").mouseenter(function(){
+     	$(this).find("div").stop().animate({"margin-top":-30},5000)
+     })
+     $(".list li").mouseleave(function(){
+     	$(this).find("div").stop().animate({"margin-top":0},5000)
+     })
+	</script>
+	
+</body>
+</html>

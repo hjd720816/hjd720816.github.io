@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+#box{
+	height: 200px;
+	width: 300px;
+	background-color: yellow;
+
+}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<form action="http://www.baidu.com">
+		<input type="text" placeholder="你可以成为自己想要的样子">
+		<input id="a" type="button" value="变">
+		<input type="submit">
+		<input type="password">
+	</form>
+	<script src="js/jquery1.js"></script>
+	<script>
+$("#a").click(function(){
+
+$("#box").css(
+{
+	"height":"500px",
+	"width":"600px",
+	"background-color":"green"	
+})
+}
+)
+	</script>
+
+	
+</body>
+</html>

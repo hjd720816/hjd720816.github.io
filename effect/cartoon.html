@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.box{
+		width: 500px;
+		height: 500px;
+		background-color: green;
+	}
+	</style>
+</head>
+<body>
+	<div class="box">
+		
+	</div>
+    <input type="button" value="显示" id="show">
+	<input type="button" value="隐藏" id="hide">
+	<input type="button" value="上卷" id="slideup">
+	<input type="button" value="下拉" id="slidedown">
+	<input type="button" value="渐入" id="fadein">
+	<input type="button" value="渐出" id="fadeout">
+	<script src="js/jquery1.js"></script>
+	<script>
+     $("#hide").click(function(){
+      $(".box").stop().hide(6000);
+      })
+      $("#show").click(function(){
+      $(".box").stop().show(6000);
+      })
+      $("#slideup").click(function(){
+      	$(".box").stop().slideUp(5000);
+     })
+      $("#slidedown").click(function(){
+      	$(".box").stop().slideDown(5000);
+      })
+      $("#fadein").click(function(){
+      	$(".box").stop().fadeIn(5000);
+     })
+      $("#fadeout").click(function(){
+      	$(".box").stop().fadeOut(5000);
+     })
+
+	</script>
+</body>
+</html>
